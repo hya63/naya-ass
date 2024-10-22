@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,149 +9,144 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
   <style>
-
-body {
-        font-family: "Poppins", serif;
-        background-color: #f5d5c4;
-      }
-
-      @keyframes floating {
-        0% {
-          transform: translate(10px, -10px);
-        }
-        50% {
-          transform: translate(20px, -20px);
-        }
-        100% {
-          transform: translate(10px, -10px);
-        }
-      }
-
-
-      .ADHD {
-        min-height: 560px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .card-ADHD {
-        background-color: white;
-        border-radius: 1rem;
-        border-color: #EEA47FFF;
-        border-style: solid;
-        border-width: 5px;
-        animation: floating 3s ease-in-out infinite;
-
-      }
-      .card-header {
-        margin-top: 2px;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-      }
-      .card-text {
-        font-size: 30px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-        margin-right: 5px;
-      }
-     .navbar {
-        background-color:#00539CFF;
-      }
-      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 350px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  justify-content: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #f2c2cf;
-  color: black;
-}
-.flip-card-front img {
-  height:200px;
-}
-.first-title{
-  color: #ed1818;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #c9f7b0;
-  color: black;
-  transform: rotateY(180deg);
-  vertical-align: middle;
-  text-align: center;
-}
-.second-title{
-  color: #5ae310
-}
-
-.row {
-  justify-content: center;
-}
-    h1 {
-      color: blue;
+    body {
+      font-family: "Poppins", serif;
+      background-color: #f0f4f7; /* Calming light blue background */
     }
 
-    h2 {
-      color: aquamarine;
+    @keyframes floating {
+      0% {
+        transform: translate(10px, -10px);
+      }
+      50% {
+        transform: translate(20px, -20px);
+      }
+      100% {
+        transform: translate(10px, -10px);
+      }
     }
 
+    .ADHD {
+      min-height: 560px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-ADHD {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      border-color: #87a8d0; /* Softer blue for card borders */
+      border-style: solid;
+      border-width: 5px;
+      animation: floating 3s ease-in-out infinite;
+    }
+
+    .card-header {
+      margin-top: 2px;
+      font-size: 40px; /* Slightly reduced size for focus */
+      font-weight: bold;
+      text-align: center;
+      color: #2a3d66; /* Dark blue for better readability */
+    }
+
+    .card-text {
+      font-size: 20px;
+      color: #4a4a4a; /* Softer dark gray for body text */
+      margin: 10px;
+    }
+
+    .navbar {
+      background-color: #528aae; /* Muted blue for navbar */
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 350px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #cfe4f1; /* Soft blue for card front */
+      color: #1b3b5f; /* Darker blue for text */
+    }
+
+    .flip-card-front img {
+      height: 200px;
+    }
+
+    .first-title {
+      color: #1b3b5f; /* Calm dark blue for myths */
+    }
+
+    .flip-card-back {
+      background-color: #e2f0d9; /* Softer green for card back */
+      color: #2f5931; /* Calm green for text */
+      transform: rotateY(180deg);
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .second-title {
+      color: #2f5931; /* Calming green for facts */
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    h1,
+    h2,
     h3 {
-      color: green;
+      color: #2a3d66; /* Use consistent dark blue for headings */
     }
 
-    #hi {
-      color: black;
-      font-weight: bold;
-      font-size: 1.5rem;
-      background-color: antiquewhite;
-    }
-
-    #bye {
-      color: blue;
-      font-weight: bold;
-      font-size: 1.5 rem;
-      background-color: white;
-    }
-
+    #hi,
+    #bye,
     #yes {
-      color: coral;
+      background-color: #edf1f5; /* Very soft background for lists */
+      color: #4a4a4a; /* Softer gray for text */
       font-weight: bold;
-      font-size: 1.5rem;
-      background-color: beige;
+      font-size: 1.2rem;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #528aae; /* Calm blue for buttons */
+      color: white;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #436f8d; /* Slightly darker blue on hover */
     }
   </style>
 
